@@ -1,7 +1,6 @@
 import os
 import json
 
-
 def crawl_dir(dir, parent_tree, parent_dir):
     dir_contents = os.listdir(dir)        
     current_tree = {}
@@ -18,8 +17,6 @@ def crawl_dir(dir, parent_tree, parent_dir):
             folder.append(path)
     return current_tree
     
-
-
 dir = "exampleDir"
 tree = {}
 tree[dir] = []
